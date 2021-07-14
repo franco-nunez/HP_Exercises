@@ -4,7 +4,7 @@
 
 # Auxiliary functions
 
-# Franco Nuñez
+# Franco NuÃ±ez
 
 ### ### ### ### ### ###
 
