@@ -34,7 +34,7 @@ subtitle_c = ""
 title_t =  ""
 subtitle_t = ""
 
-size_text = 26
+size_text = 36
 
 # 2.a
 # Generate the graphs with focus on recent years
