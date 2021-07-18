@@ -114,7 +114,7 @@ source("Auxiliary - graphs.R")
 #subtitle_c = " "
 
 #Plot cycles
-graph_cycle(tit=title_c, subt=subtitle_c , size_text=size_text, axis_breaks = "6 months", axis_labels= "%Y-%b")
+graph_cycle(tit=title_c, subt=subtitle_c , size_text=size_text, axis_breaks = "1 year", axis_labels= "%Y")
 ggsave(paste0("Chile-Cycles-quarterly-base starting in ", year, "-", quarter,".png"), path ="Outputs", width = 12, height=7) # Save as .png image
 
 #Choose titles
@@ -122,7 +122,7 @@ ggsave(paste0("Chile-Cycles-quarterly-base starting in ", year, "-", quarter,".p
 #subtitle_t = ""
 
 #Plot tendencies
-graph_trend(tit=title_t, subt=subtitle_t, size_text=size_text, axis_breaks = "6 months", axis_labels= "%Y-%b")
+graph_trend(tit=title_t, subt=subtitle_t, size_text=size_text, axis_breaks = "1 year", axis_labels= "%Y")
 ggsave(paste0("Chile-Trends-quarterly-base starting in ", year, "-", quarter,".png"), path ="Outputs", width = 12, height=7) # Save as .png image
 
 # 2.3. With forecasts, annual#####
@@ -200,7 +200,7 @@ source("Auxiliary - graphs.R")
 #subtitle_c = ""
 
 #Plot cycles
-graph_cycle(tit=title_c, subt=subtitle_c, size_text=size_text, axis_breaks = "6 months", axis_labels= "%Y-%b")
+graph_cycle(tit=title_c, subt=subtitle_c, size_text=size_text, axis_breaks = "1 year", axis_labels= "%Y")
 ggsave(paste0("Chile-Cycles-quarterly-forecasts starting in ", year, "-", quarter,".png"), path ="Outputs", width = 12, height=7) # Save as .png image
 
 #Choose titles
@@ -208,7 +208,7 @@ ggsave(paste0("Chile-Cycles-quarterly-forecasts starting in ", year, "-", quarte
 #subtitle_t = ""
 
 #Plot tendencies
-graph_trend(tit=title_t, subt=subtitle_t, size_text=size_text, axis_breaks = "6 months", axis_labels= "%Y-%b")
+graph_trend(tit=title_t, subt=subtitle_t, size_text=size_text, axis_breaks = "1 year", axis_labels= "%Y")
 ggsave(paste0("Chile-Trends-quarterly-forecasts starting in ", year, "-", quarter,".png"), path ="Outputs", width = 12, height=7) # Save as .png image
 
 
