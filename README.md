@@ -2,7 +2,7 @@
 
 [EN] - [ES]
 
-[EN] In this repository you will find the codes and files necessary to reproduce the exercises with the HP filter. In the file "Annex - Graphics - Exercises_con_el_filtro_HP.pdf" you will find all the graphics generated in the process (quarterly and annual data, cycle and trend). The extrafont (v0.17), ggplot2 (v3.3.2), zoo (v1.8-8), writexl (v1.3.1), tsbox (v0.2.1), readxl (v1.3.1) and mFilter ( v0.1-5) packages are utilized.
+[EN] In this repository you will find the codes and files necessary to reproduce the exercises with the HP filter. In the file "Annex - Graphics - Exercises_with_the_HP_Filter.pdf" you will find all the graphics generated in the process (quarterly and annual data, cycle and trend). The extrafont (v0.17), ggplot2 (v3.3.2), zoo (v1.8-8), writexl (v1.3.1), tsbox (v0.2.1), readxl (v1.3.1) and mFilter ( v0.1-5) packages are utilized.
 
 The same steps are repeated for the logarithm of the real GDP of the United States and Chile (multiplied by 100 to have an interpretation in percentage points). In both cases, after downloading the corresponding folder ("US" or "Chile") to replicate the exercise, just execute the code "4 - Visualization.R". The files needed are in the "Inputs" folder. In addition, the other codes are automatically executed: the "3 - Visualization LT.R" and "3 - Visualization ST.R" generate the graphs, for which they call the estimators, which start with 2. At their Once, they call the primary data processing codes, starting with 1. The "Auxiliary - graphs.R" code is executed, as it has two functions to set the format.
 
