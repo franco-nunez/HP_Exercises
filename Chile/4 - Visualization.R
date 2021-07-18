@@ -11,6 +11,10 @@
 # Set directory
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
+# These two lines check and install packages if needed
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(extrafont, ggplot2, zoo, writexl, tsbox, readxl, mFilter)
+
 ##### Option 1: only estimations and export ####
 
 # Call. This executes the 4 exercises, without graphs
@@ -21,12 +25,10 @@ source("3 - Results.R")
 
 ##### Option 2: Estimations, export and visualization ####
 
-# If necessary, install and import extra fonts:
-#install.packages("extrafont")
-#library(extrafont)
-#font_import()
-#y
-#loadfonts(device = "win")
+# Import extra fonts:
+library(extrafont)
+font_import()
+loadfonts(device = "win")
 
 # Set titles (c is for cycles, t for trends), size of text
 title_c =  ""
