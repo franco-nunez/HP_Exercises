@@ -62,6 +62,7 @@ loadfonts(device = "win")
 
 # Load functions
 source("Auxiliary - graphs.R")
+source("Auxiliary - graphs with OECD recessions.R")
 
 #Choose titles
 #title_c =  ""
@@ -72,7 +73,7 @@ source("Auxiliary - graphs.R")
 
 #Plot cycles
 graph_cycle(tit=title_c, subt=subtitle_c, size_text=size_text, axis_breaks = "10 years", axis_labels= "%Y")
-ggsave(paste0("Chile-Cycles-annual-base starting in ", year, "-", quarter,".png"), path ="Outputs", width = 12, height=7) # Save as .png image
+ggsave(paste0("Chile-Cycles-annual-base starting in ", year, "-", quarter,image_format), path ="Outputs", width = 12, height=7) # Save as .png image
 
 #Choose titles
 #title_t =  ""
@@ -80,7 +81,7 @@ ggsave(paste0("Chile-Cycles-annual-base starting in ", year, "-", quarter,".png"
 
 #Plot tendencies
 graph_trend(tit=title_t, subt=subtitle_t, size_text=size_text, axis_breaks = "10 years", axis_labels= "%Y")
-ggsave(paste0("Chile-Trends-annual-base starting in ", year, "-", quarter,".png"), path ="Outputs", width = 12, height=7) # Save as .png image
+ggsave(paste0("Chile-Trends-annual-base starting in ", year, "-", quarter,image_format), path ="Outputs", width = 12, height=7) # Save as .png image
 
 # 2.2. Base, quarterly#####
 # Change the argument, according to the desired exercise:
@@ -108,14 +109,17 @@ ts_plot(plot_trend)
 
 # Load functions
 source("Auxiliary - graphs.R")
+source("Auxiliary - graphs with OECD recessions.R")
 
 #Choose titles
 #title_c =  ""
 #subtitle_c = " "
 
 #Plot cycles
+graph_cycle_oecd(tit=title_c, subt=subtitle_c , size_text=size_text, axis_breaks = "5 years", axis_labels= "%Y")
+ggsave(paste0("Chile-CyclesOECD-quarterly-base starting in ", year, "-", quarter,image_format), path ="Outputs", width = 12, height=7) # Save as .png image
 graph_cycle(tit=title_c, subt=subtitle_c , size_text=size_text, axis_breaks = "5 years", axis_labels= "%Y")
-ggsave(paste0("Chile-Cycles-quarterly-base starting in ", year, "-", quarter,".png"), path ="Outputs", width = 12, height=7) # Save as .png image
+ggsave(paste0("Chile-Cycles-quarterly-base starting in ", year, "-", quarter,image_format), path ="Outputs", width = 12, height=7) # Save as .png image
 
 #Choose titles
 #title_t =  ""
@@ -123,7 +127,7 @@ ggsave(paste0("Chile-Cycles-quarterly-base starting in ", year, "-", quarter,".p
 
 #Plot tendencies
 graph_trend(tit=title_t, subt=subtitle_t, size_text=size_text, axis_breaks = "5 years", axis_labels= "%Y")
-ggsave(paste0("Chile-Trends-quarterly-base starting in ", year, "-", quarter,".png"), path ="Outputs", width = 12, height=7) # Save as .png image
+ggsave(paste0("Chile-Trends-quarterly-base starting in ", year, "-", quarter,image_format), path ="Outputs", width = 12, height=7) # Save as .png image
 
 # 2.3. With forecasts, annual#####
 # Change the argument, according to the desired exercise:
@@ -158,7 +162,7 @@ source("Auxiliary - graphs.R")
 
 #Plot cycles
 graph_cycle(tit=title_c, subt=subtitle_c, size_text=size_text, axis_breaks = "10 years", axis_labels= "%Y")
-ggsave(paste0("Chile-Cycles-annual-forecasts starting in ", year, "-", quarter,".png"), path ="Outputs", width = 12, height=7) # Save as .png image
+ggsave(paste0("Chile-Cycles-annual-forecasts starting in ", year, "-", quarter,image_format), path ="Outputs", width = 12, height=7) # Save as .png image
 
 #Choose titles
 #title_t =  ""
@@ -166,7 +170,7 @@ ggsave(paste0("Chile-Cycles-annual-forecasts starting in ", year, "-", quarter,"
 
 #Plot tendencies
 graph_trend(tit=title_t, subt=subtitle_t, size_text=size_text, axis_breaks = "10 years", axis_labels= "%Y")
-ggsave(paste0("Chile-Trends-annual-forecasts starting in ", year, "-", quarter,".png"), path ="Outputs", width = 12, height=7) # Save as .png image
+ggsave(paste0("Chile-Trends-annual-forecasts starting in ", year, "-", quarter,image_format), path ="Outputs", width = 12, height=7) # Save as .png image
 
 # 2.4. With forecasts, quarterly#####
 # Change the argument, according to the desired exercise:
@@ -194,14 +198,17 @@ ts_plot(plot_trend)
 
 # Load functions
 source("Auxiliary - graphs.R")
+source("Auxiliary - graphs with OECD recessions.R")
 
 #Choose titles
 #title_c =  ""
 #subtitle_c = ""
 
 #Plot cycles
+graph_cycle_oecd(tit=title_c, subt=subtitle_c, size_text=size_text, axis_breaks = "5 years", axis_labels= "%Y")
+ggsave(paste0("Chile-CyclesOECD-quarterly-forecasts starting in ", year, "-", quarter,image_format), path ="Outputs", width = 12, height=7) # Save as .png image
 graph_cycle(tit=title_c, subt=subtitle_c, size_text=size_text, axis_breaks = "5 years", axis_labels= "%Y")
-ggsave(paste0("Chile-Cycles-quarterly-forecasts starting in ", year, "-", quarter,".png"), path ="Outputs", width = 12, height=7) # Save as .png image
+ggsave(paste0("Chile-Cycles-quarterly-forecasts starting in ", year, "-", quarter,image_format), path ="Outputs", width = 12, height=7) # Save as .png image
 
 #Choose titles
 #title_t =  ""
@@ -209,7 +216,7 @@ ggsave(paste0("Chile-Cycles-quarterly-forecasts starting in ", year, "-", quarte
 
 #Plot tendencies
 graph_trend(tit=title_t, subt=subtitle_t, size_text=size_text, axis_breaks = "5 years", axis_labels= "%Y")
-ggsave(paste0("Chile-Trends-quarterly-forecasts starting in ", year, "-", quarter,".png"), path ="Outputs", width = 12, height=7) # Save as .png image
+ggsave(paste0("Chile-Trends-quarterly-forecasts starting in ", year, "-", quarter,image_format), path ="Outputs", width = 12, height=7) # Save as .png image
 
 
 

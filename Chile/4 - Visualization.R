@@ -30,13 +30,17 @@ library(extrafont)
 font_import()
 loadfonts(device = "win")
 
-# Set titles (c is for cycles, t for trends), size of text
+# Set titles (c is for cycles, t for trends), size of text and image format
 title_c =  ""
 subtitle_c = ""
 title_t =  ""
 subtitle_t = ""
 
 size_text = 36
+
+image_format = ".png" # ".png" or ".jpeg", other formats need inclusion in postscript() device
+rec_color = "goldenrod3" # Recessions shade color
+rec_alpha = 0.15 # Recessions alpha (transparency)
 
 # 2.a
 # Generate the graphs with focus on recent years

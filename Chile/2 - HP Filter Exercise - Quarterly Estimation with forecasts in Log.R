@@ -4,7 +4,7 @@
 
 # (Log of) Real GDP, Central Bank of Chile EEE forecasts
 
-# Franco NuÃ±ez
+# Franco Nuñez
 
 ### ### ### ### ### ###
 

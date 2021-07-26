@@ -4,7 +4,7 @@
 
 # (Log of) Real GDP, Quarterly
 
-# Franco NuÃ±ez
+# Franco Nuñez
 
 ### ### ### ### ### ###
 

@@ -4,7 +4,7 @@
 
 # Real GDP, quarterly
 
-# Franco NuÃ±ez
+# Franco Nuñez
 
 ### ### ### ### ### ###
 
