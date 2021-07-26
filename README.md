@@ -11,7 +11,7 @@ Se repiten los mismos pasos para el logaritmo del PBI real de Estados Unidos y C
 Tanto los archivos como las imágenes con los gráficos se generarán en la carpeta "Outputs". Al descargarse esta carpeta ya viene con archivos, pero solo a modo de comparación o control. Al ejecutar el código se reemplazarán (aunque los resultados serán los mismos).
 
 ### Opciones
-En en "4 - Visualization.R" se pueden cambiar: los títulos (sin título por default), subtítulos (sin subtítulo por default), tamaño del texto, formato de la imagen (.png o .jpeg), color y transparecia de las barras indicando recesiones.
+En "4 - Visualization.R" se pueden cambiar: los títulos (sin título por default), subtítulos (sin subtítulo por default), tamaño del texto, formato de la imagen (.png o .jpeg), color y transparecia de las barras indicando recesiones.
 
 ### Barras indicando recesiones
 Las barras que indican las recesiones se basan en las fechas definidas por el NBER para Estados Unidos y por la OCDE para Chile. Los archivos "Auxiliary - graphs with NBER recessions.R" y "Auxiliary - graphs with OECD recessions.R" tienen las funciones necesarias, usando como pasos intermedios  los códigos "Auxiliary - NBER+FRED recessions.R" y "Auxiliary - OECD+FRED recessions.R". Estos códigos están basado en el código de Fabian Scheler, disponible en https://rpubs.com/FSl/609471. La principal diferencia es que se proporciona la información (en la carpeta Inputs), en lugar de descargarla con la API de la FRED en cada ocasión. Esto, a fines de facilitar la replicación, evitando la necesidad de crear una clav. La descarga y procesamiento original puede consultarse en los códigos "Auxiliary data - OECD+NBER.R" y "Auxiliary data - OECD+NBER.R". 
