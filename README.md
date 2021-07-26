@@ -13,6 +13,10 @@ Tanto los archivos como las imágenes con los gráficos se generarán en la carp
 ### Opciones
 En en "4 - Visualization.R" se pueden cambiar: los títulos (sin título por default), subtítulos (sin subtítulo por default), tamaño del texto, formato de la imagen (.png o .jpeg), color y transparecia de las barras indicando recesiones.
 
+### Barras indicando recesiones
+Las barras que indican las recesiones se basan en las fechas definidas por el NBER para Estados Unidos y por la OCDE para Chile. Los archivos "Auxiliary - graphs with NBER recessions.R" y "Auxiliary - graphs with OECD recessions.R" tienen las funciones necesarias, usando como pasos intermedios  los códigos "Auxiliary - NBER+FRED recessions.R" y "Auxiliary - OECD+FRED recessions.R". Estos códigos están basado en el código de Fabian Scheler, disponible en https://rpubs.com/FSl/609471. La principal diferencia es que se proporciona la información (en la carpeta Inputs), en lugar de descargarla con la API de la FRED en cada ocasión. Esto, a fines de facilitar la replicación, evitando la necesidad de crear una clav. La descarga y procesamiento original puede consultarse en los códigos "Auxiliary data - OECD+NBER.R" y "Auxiliary data - OECD+NBER.R". 
+
+
 ## [EN] General description
 In this repository you will find the codes and files necessary to reproduce the exercises with the HP filter. In the file "Annex - Graphics - Exercises_with_the_HP_Filter.pdf" you will find all the graphics generated in the process (quarterly and annual data, cycle and trend). The extrafont (v0.17), ggplot2 (v3.3.2), zoo (v1.8-8), writexl (v1.3.1), tsbox (v0.2.1), readxl (v1.3.1), mFilter (v0.1-5) and ecm (v6.3.0) packages are utilized.
 
@@ -23,6 +27,9 @@ Both the files and the images with the graphics will be generated in the "Output
 
 ### Options
 In "4 - Visualization.R" you can change: the titles (without title by default), subtitles (without subtitle by default), text size, image format (.png or .jpeg), color and transparency of bars indicating recessions. 
+
+### Recessions bars
+The bars indicating recessions are based on the dates defined by the NBER for the United States and by the OECD for Chile. The files "Auxiliary - graphs with NBER recessions.R" and "Auxiliary - graphs with OECD recessions.R" have the necessary functions, using as intermediate steps the codes "Auxiliary - NBER + FRED recessions.R" and "Auxiliary - OECD + FRED recessions.R ". These codes are based on Fabian Scheler's code, available at https://rpubs.com/FSl/609471. The main difference is that the information is provided (in the Inputs folder), rather than downloaded with the FRED API each time. This, in order to facilitate replication, avoiding the need to create a key. The original download and processing can be found in the codes "Auxiliary data - OECD + NBER.R" and "Auxiliary data - OECD + NBER.R". 
 
 
 
