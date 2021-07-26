@@ -30,7 +30,7 @@ library(extrafont)
 font_import()
 loadfonts(device = "win")
 
-# Set titles (c is for cycles, t for trends), size of text
+# Set titles (c is for cycles, t for trends), size of text and image details
 title_c =  ""
 subtitle_c = ""
 title_t =  ""
