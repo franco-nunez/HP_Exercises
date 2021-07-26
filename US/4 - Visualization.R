@@ -13,7 +13,7 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # These two lines check and install packages if needed
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(extrafont, ggplot2, zoo, writexl, tsbox, readxl, mFilter)
+pacman::p_load(extrafont, ggplot2, zoo, writexl, tsbox, readxl, mFilter, ecm)
 
 ##### Option 1: only estimations and export ####
 
@@ -38,6 +38,10 @@ subtitle_t = ""
 
 size_text = 36
 
+image_format = ".png" # ".png" or ".jpeg", other formats need inclusion in postscript() device
+rec_color = "goldenrod3" # Recessions shade color
+rec_alpha = 0.15 # Recessions alpha (transparency)
+
 # 2.a
 # Generate the graphs with focus on recent years
 source("3 - Visualization ST.R")
@@ -45,3 +49,4 @@ source("3 - Visualization ST.R")
 #2.b
 # Generate the graphs with long term view
 source("3 - Visualization LT.R")
+

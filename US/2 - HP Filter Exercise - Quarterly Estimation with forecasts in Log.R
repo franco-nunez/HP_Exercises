@@ -98,4 +98,4 @@ data_log_cyclereal_df$Year_date <- Year_date
 #install.packages("writexl") #If needed
 library(writexl)
 write_xlsx(data_log_trendreal_df,"Outputs\\Log-Trend-real-withforecasts-onlyobs quarterly.xlsx")
-write_xlsx(data_log_cyclereal_df,"Outputs\\Log-Cycle-real-withforecasts-onlyobs quarterly.xlsx.xlsx")
+write_xlsx(data_log_cyclereal_df,"Outputs\\Log-Cycle-real-withforecasts-onlyobs quarterly.xlsx")

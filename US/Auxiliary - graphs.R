@@ -17,7 +17,7 @@ graph_cycle <- graph_cycle +  theme(text=element_text(size=size_text,  family=fo
 graph_cycle <- graph_cycle +  theme(legend.position = "none")
 graph_cycle <- graph_cycle + scale_color_grey(start=0.9, end=0)
 graph_cycle <- graph_cycle + theme(axis.line = element_line(colour = "Black", 
-                                                size = 0.8, linetype = "solid"))
+                                                size = 0.9, linetype = "solid"))
 graph_cycle <- graph_cycle + geom_hline(yintercept=0, linetype="dashed", 
                             color = "Black", size=0.75)
 graph_cycle <- graph_cycle + theme(axis.text.x = element_text(color="Black"),
@@ -38,7 +38,7 @@ graph_trend = function(name, tit, subt, size_text=18,font_text="Times New Roman"
   name <- name +  theme(legend.position = "none")
   name <- name + scale_color_grey(start=0.9, end=0)
   name <- name + theme(axis.line = element_line(colour = "Black", 
-                                                size = 0.8, linetype = "solid"))
+                                                size = 0.9, linetype = "solid"))
   name <- name + theme(axis.text.x = element_text(color="Black"),
                        axis.text.y = element_text(color="Black"))
   name <- name + ggtitle(tit, subtitle = subt)
