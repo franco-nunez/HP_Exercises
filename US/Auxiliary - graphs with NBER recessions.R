@@ -34,7 +34,7 @@ source("Auxiliary - NBER+FRED recessions.R")
 library(ggplot2)
 graph_cycle_nber = function(name, tit, subt, size_text=18, font_text="Times New Roman", size_lines=1.25, axis_breaks = "6 months", axis_labels= "%Y-%b"){
   graph_cycle <- ts_ggplot(plot_cycle)
-  graph_cycle <- graph_cycle + add_rec_shade(as.Date("2017-01-01"),as.Date(last_date))
+  graph_cycle <- graph_cycle + add_rec_shade(as.Date("2017-01-01"),as.Date("2020-06-01"))
   graph_cycle <- graph_cycle +  geom_line(aes(x=time, y=value,color=factor(id)), size = size_lines)
   graph_cycle <- graph_cycle + theme_classic()
   graph_cycle <- graph_cycle +  theme(text=element_text(size=size_text,  family=font_text))
