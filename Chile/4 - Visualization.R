@@ -39,7 +39,7 @@ subtitle_t = ""
 size_text = 36
 
 image_format = ".png" # ".png" or ".jpeg", other formats need inclusion in postscript() device
-rec_color = "goldenrod3" # Recessions shade color
+rec_color = "brown" # Recessions shade color
 rec_alpha = 0.15 # Recessions alpha (transparency)
 
 # 2.a

@@ -14,6 +14,8 @@
 
 library(fredr)
 library(ecm)
+library(writexl)
+library(readxl)
 #fredr_set_key("Your API Key")
 
 st_date <-"1995-02-01"	# Data start here
@@ -28,8 +30,7 @@ recession$diff<-recession$value-lagpad(recession$value,k=1)
 recession<-recession[!is.na(recession$diff),]
 
 # Save
-library(writexl)
 write_xlsx(recession,"Inputs\\OECDrecessions.xlsx")
 
 # Check
-recession <- read_excel("Inputs\\NBERrecessions.xlsx", sheet = 1)
+recession <- read_excel("Inputs\\OECDrecessions.xlsx", sheet = 1)
